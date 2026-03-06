@@ -1,9 +1,10 @@
 import { BackgroundLines } from "@/components/ui/background-lines";
+import GlobeDemo from "@/components/globe-demo";
 import LayoutTextFlipDemo from "@/components/layout-text-flip-demo";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0b0b0f] text-white">
+    <div className="min-h-screen bg-[#06080f] text-white">
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-12 sm:py-16">
         {/* <header className="space-y-4">
           <p className="text-xs uppercase tracking-[0.4em] text-zinc-400">
@@ -19,7 +20,7 @@ export default function Home() {
         </header> */}
 
         <BackgroundLines className="flex flex-col items-center justify-center px-6 py-14 text-center sm:px-10 sm:py-20">
-          <p className="mb-4 rounded-full border border-emerald-300/40 bg-emerald-400/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-emerald-200">
+          <p className="mb-4 rounded-full border border-sky-300/40 bg-sky-400/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-sky-200">
             Limited early access
           </p>
           <LayoutTextFlipDemo />
@@ -27,16 +28,19 @@ export default function Home() {
             Join the waitlist to get priority access in your city and help shape
             the app that makes intentions clear from the first match.
           </p>
+          <div className="mt-6 w-full max-w-xl">
+            <GlobeDemo />
+          </div>
           <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="h-12 flex-1 rounded-full border border-white/15 bg-black/45 px-5 text-sm text-white placeholder:text-zinc-500 focus:border-emerald-400 focus:outline-none"
+              className="h-12 flex-1 rounded-full border border-white/15 bg-black/45 px-5 text-sm text-white placeholder:text-zinc-500 focus:border-sky-400 focus:outline-none"
             />
             <button
               type="button"
-              className="h-12 rounded-full bg-emerald-400 px-7 text-sm font-semibold text-black transition hover:bg-emerald-300"
+              className="h-12 rounded-full bg-sky-400 px-7 text-sm font-semibold text-slate-950 transition hover:bg-sky-300"
             >
               Get Early Access
             </button>

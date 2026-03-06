@@ -12,11 +12,11 @@ export function BackgroundLines({ children, className = "" }: BackgroundLinesPro
           aria-hidden="true"
         />
         <div
-          className="absolute inset-[-60%] bg-[repeating-linear-gradient(80deg,transparent_0_64px,rgba(52,211,153,0.16)_64px_66px)] intent-lines-fast"
+          className="absolute inset-[-60%] bg-[repeating-linear-gradient(80deg,transparent_0_64px,rgba(56,189,248,0.18)_64px_66px)] intent-lines-fast"
           aria-hidden="true"
         />
       </div>
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(52,211,153,0.2),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(244,63,94,0.18),transparent_35%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.22),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(100,116,139,0.2),transparent_35%)]" />
       <div className="relative z-10">{children}</div>
     </div>
   );
